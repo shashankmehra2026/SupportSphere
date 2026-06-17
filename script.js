@@ -62,3 +62,20 @@ backToTop.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+
+    question.addEventListener('click', () => {
+        item.classList.toggle('active');
+
+        const icon = question.querySelector('span');
+
+        if (item.classList.contains('active')) {
+            icon.textContent = '−';
+        } else {
+            icon.textContent = '+';
+        }
+    });
+});
