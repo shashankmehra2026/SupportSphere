@@ -34,7 +34,7 @@
 <li><a href="services.html">Services</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="faq.html">FAQ</a></li>
-<li><a href="#contact">Contact</a></li>
+<li><a href="contact.html">Contact</a></li>
 </ul>
 
 
@@ -242,7 +242,7 @@ Find answers to common questions about our services, engagement models, and supp
             <a href="services.html">Services</a>
             <a href="about.html">About</a>
             <a href="#faq">FAQ</a>
-            <a href="#contact">Contact</a>
+            <a href="contact.html">Contact</a>
         </div>
 
         <div class="footer-column">
@@ -263,7 +263,6 @@ Find answers to common questions about our services, engagement models, and supp
 </footer>
 
 <script>
-const faqItems = document.querySelectorAll('.faq-item');
 
 faqItems.forEach(item => {
     const question = item.querySelector('.faq-question');
@@ -281,6 +280,10 @@ faqItems.forEach(item => {
     });
 });
 </script>
+
+<button id="backToTop" title="Go to top">
+            ↑
+        </button>
 
 <script src="script.js"></script>
 
