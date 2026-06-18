@@ -119,7 +119,6 @@ if (backToTop) {
     
 console.log("FAQ JS Loaded");
 const faqItems = document.querySelectorAll('.faq-item');
-alert("FAQ Items Found: " + faqItems.length);
 
 faqItems.forEach(item => {
     const question = item.querySelector('.faq-question');
