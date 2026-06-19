@@ -1033,3 +1033,35 @@ footer {
     }
 
 }
+/* ==========================
+   MOBILE RESPONSIVE STYLES
+   ========================== */
+
+@media screen and (max-width: 768px) {
+
+    .nav-links {
+        flex-wrap: wrap !important;
+        gap: 12px !important;
+        justify-content: center !important;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+
+    .footer-column {
+        text-align: center !important;
+    }
+
+    .contact-info {
+    grid-template-columns: 1fr !important;
+    padding: 40px 20px !important;
+    gap: 20px !important;
+}
+
+.contact-card {
+    min-height: auto !important;
+}
+
+}
