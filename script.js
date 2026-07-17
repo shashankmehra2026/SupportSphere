@@ -118,20 +118,89 @@ if (backToTop) {
 }
     
 console.log("FAQ JS Loaded");
-const faqItems = document.querySelectorAll('.faq-item');
+
+const faqItems = document.querySelectorAll(".faq-item");
 
 faqItems.forEach(item => {
-    const question = item.querySelector('.faq-question');
 
-    question.addEventListener('click', () => {
-        item.classList.toggle('active');
+    const question = item.querySelector(".faq-question");
 
-        const icon = question.querySelector('span');
+    if (!question) return;
 
-        if (item.classList.contains('active')) {
-            icon.textContent = '−';
-        } else {
-            icon.textContent = '+';
+    question.addEventListener("click", () => {
+
+        item.classList.toggle("active");
+
+        const icon = question.querySelector("span");
+
+        if (icon) {
+            icon.textContent = item.classList.contains("active") ? "−" : "+";
+        }
+
+    });
+
+});
+// ===============================
+// SEARCH POPUP
+// ===============================
+
+const searchButton = document.querySelector(".search-icon a");
+const searchOverlay = document.querySelector(".search-overlay");
+const closeSearch = document.querySelector(".close-search");
+const searchInput = document.querySelector(".search-box input");
+
+if (searchButton && searchOverlay && closeSearch && searchInput) {
+
+    searchButton.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        searchOverlay.classList.add("active");
+        searchInput.focus();
+    });
+
+    closeSearch.addEventListener("click", function () {
+        searchOverlay.classList.remove("active");
+    });
+
+    searchOverlay.addEventListener("click", function (e) {
+        if (e.target === searchOverlay) {
+            searchOverlay.classList.remove("active");
         }
     });
+
+    document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+            searchOverlay.classList.remove("active");
+        }
+    });
+
+}
+/* ==========================
+   WHY SUPPORTSPHERE ANIMATION
+========================== */
+
+const whyItems = document.querySelectorAll(".why-item");
+
+const whyObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add("show");
+
+        } else {
+
+            entry.target.classList.remove("show");
+
+        }
+
+    });
+
+}, {
+    threshold: 0.2
+});
+
+whyItems.forEach(item => {
+    whyObserver.observe(item);
 });
