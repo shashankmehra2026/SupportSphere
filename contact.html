@@ -16,26 +16,161 @@
 
 <link rel="icon" type="image/png" href="logo.png">
 
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="contact-page">
 
-    <header class="header">
+<div class="top-bar">
+
+    <div class="container top-bar-container">
+
+        <div class="top-bar-left"></div>
+
+        <div class="top-bar-right">
+
+    <a href="https://www.linkedin.com/company/supportsphere-business-services/"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <a href="mailto:info@supportsphere.co.in"
+   aria-label="Email">
+        <i class="far fa-envelope"></i>
+    </a>
+
+    <a href="#" aria-label="Location">
+        <i class="fas fa-map-marker-alt"></i>
+    </a>
+
+</div>
+
+    </div>
+
+</div>
+
+<header class="header">
 
         <div class="container nav">
 
             <div class="logo">
-    <img src="images/supportsphere-logo.svg" alt="SupportSphere Logo">
+    <a href="index.html" aria-label="SupportSphere Home">
+        <img src="images/supportsphere-logo.svg" alt="SupportSphere Logo">
+    </a>
 </div>
 
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-<li><a href="contact.html">Contact</a></li>
-            </ul>
+
+    <li><a href="index.html">Home</a></li>
+
+    <li><a href="about.html" class="active">About</a></li>
+
+    <li class="dropdown">
+
+    <a href="services.html">
+        Services <i class="fas fa-chevron-down"></i>
+    </a>
+
+    <ul class="dropdown-menu">
+
+    <li>
+        <a href="customer-experience.html">
+            Customer Experience
+        </a>
+    </li>
+
+    <li>
+        <a href="technical-services.html">
+            Technical Services
+        </a>
+    </li>
+
+    <li>
+        <a href="business-operations.html">
+            Business Operations
+        </a>
+    </li>
+
+    <li>
+        <a href="finance-accounting.html">
+            Finance &amp; Accounting
+        </a>
+    </li>
+
+    <li>
+        <a href="digital-solutions.html">
+            Digital Solutions
+        </a>
+    </li>
+
+</ul>
+
+</li>
+
+    <li class="dropdown">
+
+    <a href="insights.html">
+        Insights <i class="fas fa-chevron-down"></i>
+    </a>
+
+    <ul class="dropdown-menu">
+
+        <li>
+            <a href="blog.html">
+                Blog
+            </a>
+        </li>
+
+        <li>
+            <a href="security-binder.html">
+                Security Binder
+            </a>
+        </li>
+
+        <li>
+            <a href="privacy-security.html">
+                Privacy &amp; Security
+            </a>
+        </li>
+
+    </ul>
+
+</li>
+
+    <li>
+        <a href="how-we-work.html">
+            How We Work
+        </a>
+    </li>
+
+    <li>
+        <a href="faq.html">
+            FAQ
+        </a>
+    </li>
+
+    <li>
+        <a href="careers.html">
+            Careers
+        </a>
+    </li>
+
+    <li class="contact-link">
+    <a href="contact.html">Contact</a>
+</li>
+
+    <li class="search-icon">
+        <a href="#" aria-label="Search">
+            <i class="fas fa-search"></i>
+        </a>
+    </li>
+
+</ul>
 
 
         </div>
@@ -168,6 +303,25 @@ required>
             ↑
         </button>
 
+        <div class="search-overlay">
+
+    <div class="search-box">
+
+        <button class="close-search">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <h2>Search SupportSphere</h2>
+
+        <input
+            type="text"
+            placeholder="Search services, insights, FAQs..."
+        >
+
+    </div>
+
+</div>
+
 <script src="script.js"></script>
 
 <footer>
@@ -178,35 +332,47 @@ required>
 
     <div class="footer-column">
 
-        <div class="footer-logo">
-            <img src="images/supportsphere-white.png"
-                 alt="SupportSphere Logo">
-        </div>
+    <div class="footer-brand">
 
-        <p>
-            You Quote, We Work.<br><br>
-            Reliable support solutions designed to help businesses scale with confidence.
-        </p>
+    <img class="footer-logo-full"
+         src="images/supportsphere-logo.svg"
+         alt="SupportSphere">
 
-    </div>
+</div>
+
+</div>
     
 
-        <div class="footer-column">
-            <h4>Quick Links</h4>
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="about.html">About</a>
-            <a href="faq.html">FAQ</a>
-<a href="contact.html">Contact</a>
-        </div>
+        <!-- Explore -->
+<div class="footer-column">
+    <h4>Explore</h4>
 
-        <div class="footer-column footer-contact">
-    <h4>Contact</h4>
-    <p>info@supportsphere.co.in</p>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="insights.html">Insights</a>
+    <a href="contact.html">Contact</a>
+</div>
 
-    <a href="https://www.linkedin.com/company/supportsphere-business-services/" target="_blank">
-        <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
+<!-- Our Expertise -->
+<div class="footer-column">
+    <h4>Our Expertise</h4>
+
+    <a href="customer-experience.html">Customer Experience</a>
+    <a href="technical-services.html">Technical Services</a>
+    <a href="business-operations.html">Business Operations</a>
+    <a href="finance-accounting.html">Finance &amp; Accounting</a>
+    <a href="digital-solutions.html">Digital Solutions</a>
+</div>
+
+<!-- Company -->
+<div class="footer-column footer-contact">
+    <h4>Company</h4>
+
+    <a href="about.html">About</a>
+    <a href="how-we-work.html">How We Work</a>
+    <a href="faq.html">FAQ</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html">Contact</a>
 </div>
 
     </div>

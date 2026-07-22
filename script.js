@@ -117,29 +117,6 @@ if (backToTop) {
 
 }
     
-console.log("FAQ JS Loaded");
-
-const faqItems = document.querySelectorAll(".faq-item");
-
-faqItems.forEach(item => {
-
-    const question = item.querySelector(".faq-question");
-
-    if (!question) return;
-
-    question.addEventListener("click", () => {
-
-        item.classList.toggle("active");
-
-        const icon = question.querySelector("span");
-
-        if (icon) {
-            icon.textContent = item.classList.contains("active") ? "−" : "+";
-        }
-
-    });
-
-});
 // ===============================
 // SEARCH POPUP
 // ===============================
@@ -147,15 +124,15 @@ faqItems.forEach(item => {
 const searchButton = document.querySelector(".search-icon a");
 const searchOverlay = document.querySelector(".search-overlay");
 const closeSearch = document.querySelector(".close-search");
-const searchInput = document.querySelector(".search-box input");
+const popupSearchInput = document.querySelector(".search-box input");
 
-if (searchButton && searchOverlay && closeSearch && searchInput) {
+if (searchButton && searchOverlay && closeSearch && popupSearchInput) {
 
     searchButton.addEventListener("click", function (e) {
         e.preventDefault();
 
         searchOverlay.classList.add("active");
-        searchInput.focus();
+        popupSearchInput.focus();
     });
 
     closeSearch.addEventListener("click", function () {
