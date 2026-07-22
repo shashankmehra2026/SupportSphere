@@ -233,22 +233,35 @@ background-repeat: no-repeat;
     margin-top:42px;
 }
 
-.primary-btn {
-    background: white;
-    color: #4f46e5;
-    padding: 14px 28px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: 700;
+.primary-btn{
+    background:#ffffff;
+    color:#4F46E5;
+    padding:16px 32px;
+    border-radius:14px;
+    font-weight:700;
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+    box-shadow:0 12px 28px rgba(79,70,229,.12);
 }
 
-.secondary-btn {
-    border: 2px solid white;
-    color: white;
-    padding: 14px 28px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: 700;
+.primary-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 20px 40px rgba(79,70,229,.20);
+}
+
+.secondary-btn{
+    border:2px solid rgba(255,255,255,.85);
+    color:#ffffff;
+    padding:16px 32px;
+    border-radius:14px;
+    transition:all .3s ease;
+}
+
+.secondary-btn:hover{
+    background:#ffffff;
+    color:#4F46E5;
 }
 
 .hero-right{
@@ -3316,9 +3329,10 @@ CAREERS PAGE
 }
 
 .section-title h2{
-    font-size:2.7rem;
-    margin-bottom:14px;
-    color:#0b1633;
+    font-size:46px;
+    line-height:1.18;
+    letter-spacing:-0.8px;
+    margin-bottom:18px;
 }
 
 .section-title p{
