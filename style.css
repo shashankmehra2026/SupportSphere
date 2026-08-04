@@ -228,6 +228,7 @@ background-repeat: no-repeat;
 
 .hero-buttons{
     display:flex;
+    justify-content:center;
     align-items:center;
     gap:18px;
     margin-top:42px;
@@ -446,10 +447,6 @@ button:hover {
 
     .hero h1 {
         font-size: 40px;
-    }
-
-    .nav-links {
-        display: none;
     }
 
     .trust-grid {
@@ -1243,55 +1240,12 @@ footer{
         grid-template-columns: 1fr;
     }
 
-}
-/* ==========================
-   MOBILE RESPONSIVE STYLES
-   ========================== */
-
-@media screen and (max-width: 768px) {
-
-    .nav-links {
-        flex-wrap: wrap !important;
-        gap: 12px !important;
-        justify-content: center !important;
-    }
-
-    .footer-grid{
-    display:grid;
-    grid-template-columns:1.55fr .9fr 1.15fr .9fr;
-    column-gap:30px;
-    align-items:start;
-}
-    .contact-info {
-    grid-template-columns: 1fr !important;
-    padding: 40px 20px !important;
-    gap: 20px !important;
+    .menu-toggle{
+    display:block;
 }
 
-.contact-card {
-    min-height: auto !important;
 }
 
-.logo img {
-    height: 90px !important;
-}
-
-.footer-column p {
-    max-width: 260px;
-    line-height: 1.7;
-    margin: 15px 0 0 0;
-}
-
-.footer-column:first-child {
-    margin-bottom: 0;
-}
-.footer-column:first-child {
-    margin-top: 40px;
-}
-.footer-contact {
-    padding-top: 36px;
-}
-}
 /* ==================================================
    TOP UTILITY BAR
 ================================================== */
@@ -1358,9 +1312,21 @@ footer{
     padding-left: 28px;
     border-left: 1px solid #e5e7eb;
 }
+
+    .menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    font-size:28px;
+    color:#111827;
+    cursor:pointer;
+    padding:0;
+}
 .contact-link{
     margin-right: 40px;
 }
+
+
 /* ==========================================
    SERVICES DROPDOWN
 ========================================== */
@@ -1976,12 +1942,23 @@ visibility .25s;
 }
 
 .section-tag{
-    display:inline-block;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
     color:#4F46E5;
-    font-size:11px;
+
+    font-size:.72rem;
     font-weight:700;
     letter-spacing:2px;
-    margin-bottom:12px;
+    text-transform:uppercase;
+
+    margin-bottom:14px;
+}
+
+.section-tag i{
+    font-size:.9rem;
+    color:inherit;
 }
 
 .about-story h2{
@@ -3938,3 +3915,723 @@ padding:35px 25px;
 
     font-weight:700;
 }
+
+/* ==========================================
+   SECURITY BINDER HERO
+========================================== */
+
+.security-hero{
+    position: relative;
+    overflow: hidden;
+      padding: 125px 0 70px;
+    background:
+        radial-gradient(circle at top right, rgba(73,115,255,.18), transparent 35%),
+        radial-gradient(circle at bottom left, rgba(122,92,255,.12), transparent 40%),
+        linear-gradient(135deg,#0c1f43 0%,#132f63 100%);
+}
+
+.security-hero::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:rgba(255,255,255,.025);
+    top:-220px;
+    right:-180px;
+    filter:blur(10px);
+}
+
+.security-hero::after{
+    content:"";
+    position:absolute;
+    width:320px;
+    height:320px;
+    border-radius:50%;
+    background:rgba(88,130,255,.08);
+    bottom:-140px;
+    left:-100px;
+    filter:blur(15px);
+}
+
+.security-hero-content{
+    max-width:900px;
+    margin:auto;
+    position:relative;
+    z-index:2;
+    text-align:center;
+    transform:translateY(-24px);
+}
+
+.security-hero .section-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.security-hero h1{
+    font-size:clamp(3rem,6vw,4.8rem);
+    color:#fff;
+    margin-bottom:18px;
+    line-height:1.1;
+}
+
+.security-hero h2{
+    font-size:1.45rem;
+    color:#d6e7ff;
+    font-weight:500;
+    margin-bottom:28px;
+}
+
+.security-hero p{
+    max-width:780px;
+    margin: 22px auto;
+    font-size:1.08rem;
+    line-height:1.9;
+    color:#b7c8dc;
+}
+
+.security-hero .hero-buttons{
+    margin-top:22px;
+}
+
+.security-updated{
+    margin-top:22px;
+    color:#8ea6c5;
+    font-size:.95rem;
+}
+
+.security-updated i{
+    margin-right:8px;
+    color:#5fa4ff;
+}
+
+/* ==========================================
+   TRUST CENTER NAVIGATION
+========================================== */
+
+.trust-nav{
+    position:sticky;
+    top:100px;              /* Matches your header height */
+    z-index:900;
+
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(10px);
+
+    border-top:1px solid #eef2f7;
+    border-bottom:1px solid #eef2f7;
+
+    box-shadow:0 8px 25px rgba(15,23,42,.05);
+}
+
+.trust-nav ul{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:32px;
+
+    list-style:none;
+
+    padding:16px 0;
+    margin:0;
+
+    flex-wrap:nowrap;
+}
+
+.trust-nav a{
+
+    position:relative;
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    color:#64748b;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    padding:4px 0;
+
+    transition:
+        color .3s ease;
+
+}
+
+.trust-nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-8px;
+
+    width:100%;
+    height:2px;
+
+    background:#4f46e5;
+
+    transform:scaleX(0);
+
+    transform-origin:center;
+
+    transition:transform .3s ease;
+
+}
+
+.trust-nav a:hover,
+.trust-nav a.active{
+
+    color:#4f46e5;
+
+}
+
+.trust-nav a:hover::after,
+.trust-nav a.active::after{
+
+    transform:scaleX(1);
+
+}
+
+/* ==========================================
+   SECURITY OVERVIEW
+========================================== */
+
+.security-overview{
+    padding:100px 0;
+    background:#fff;
+}
+
+.security-overview-grid{
+    display:grid;
+    grid-template-columns:1fr 1.2fr;
+    gap:70px;
+    align-items:center;
+}
+
+.security-overview-left h2{
+    font-size:2.8rem;
+    line-height:1.2;
+    color:#0d2343;
+    margin-top:20px;
+}
+
+.security-overview-right p{
+    color:#5b6b7d;
+    line-height:1.9;
+    margin-bottom:22px;
+    font-size:1.05rem;
+}
+
+/* ==========================================
+   SECURITY PRINCIPLES
+========================================== */
+
+.security-principles{
+    padding:110px 0;
+    background:#f7f9fc;
+}
+
+.principles-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:70px;
+}
+
+.principle-card{
+    position:relative;
+    overflow:hidden;
+
+    background:#fff;
+    border:1px solid #edf2f8;
+    border-radius:22px;
+    padding:45px 35px;
+    text-align:center;
+
+    box-shadow:0 12px 35px rgba(15,23,42,.06);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+}
+
+.principle-card:hover{
+    transform:translateY(-8px);
+
+    border-color:#d9e6ff;
+
+    box-shadow:0 24px 55px rgba(15,23,42,.12);
+}
+
+.principle-card .principle-icon{
+
+    width:82px;
+    height:82px;
+
+    margin:0 auto 28px;
+
+    border-radius:50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #4f46e5,
+            #2563eb
+        );
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#fff;
+
+    font-size:2rem;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+
+    box-shadow:
+        0 14px 30px rgba(79,70,229,.20);
+}
+
+.principle-card:hover .principle-icon{
+
+    transform:scale(1.08);
+
+    box-shadow:
+        0 18px 40px rgba(79,70,229,.28);
+
+}
+
+.principle-card h3{
+    margin-bottom:18px;
+    color:#102a43;
+}
+
+.principle-card p{
+    color:#5b6b7d;
+    line-height:1.8;
+}
+
+/* ==========================================
+   DATA PROTECTION
+========================================== */
+
+.data-protection{
+    padding:110px 0;
+    background:#fff;
+}
+
+.protection-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:70px;
+}
+
+.protection-item{
+    background:#f8fbff;
+    border:1px solid rgba(33,84,170,.08);
+    border-radius:20px;
+    padding:35px;
+    transition:.35s;
+}
+
+.protection-item:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(20,50,100,.08);
+}
+
+.protection-item i{
+    font-size:2rem;
+    color:#2b6cff;
+    margin-bottom:20px;
+}
+
+.protection-item h3{
+    margin-bottom:15px;
+    color:#102a43;
+}
+
+.protection-item p{
+    color:#5b6b7d;
+    line-height:1.8;
+}
+
+/* ==========================================
+   ACCESS MANAGEMENT
+========================================== */
+
+.access-management{
+    padding:110px 0;
+    background:#f7f9fc;
+}
+
+.access-grid{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:70px;
+    align-items:center;
+}
+
+.access-content h2{
+    margin:20px 0 25px;
+    color:#102a43;
+    font-size:2.5rem;
+}
+
+.access-content p{
+    color:#5b6b7d;
+    line-height:1.9;
+    margin-bottom:30px;
+}
+
+.access-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.access-list li{
+    margin-bottom:18px;
+    color:#425466;
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.access-list i{
+    color:#2b6cff;
+}
+
+.access-card{
+    background:#fff;
+    border-radius:24px;
+    padding:40px;
+    box-shadow:0 20px 50px rgba(15,42,72,.08);
+}
+
+.access-item{
+    padding:20px 0;
+    border-bottom:1px solid rgba(0,0,0,.08);
+}
+
+.access-item:last-child{
+    border-bottom:none;
+}
+
+.access-item h3{
+    color:#102a43;
+    margin-bottom:8px;
+}
+
+.access-item p{
+    color:#5b6b7d;
+    margin:0;
+    line-height:1.7;
+}
+
+/* ==========================================
+   INCIDENT RESPONSE
+========================================== */
+
+.incident-response{
+    padding:110px 0;
+    background:#fff;
+}
+
+.incident-timeline{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:70px;
+}
+
+.incident-step{
+    background:#f8fbff;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    border:1px solid rgba(33,84,170,.08);
+    transition:.3s;
+}
+
+.incident-step:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(20,50,100,.08);
+}
+
+.incident-step span{
+    width:65px;
+    height:65px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#2b6cff;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    font-size:1.1rem;
+}
+
+.incident-step h3{
+    margin-bottom:15px;
+    color:#102a43;
+}
+
+.incident-step p{
+    color:#5b6b7d;
+    line-height:1.8;
+}
+
+/* ==========================================
+   TRUST CTA
+========================================== */
+
+.trust-cta{
+    padding:120px 0;
+    background:linear-gradient(135deg,#0b1f42,#17335c);
+}
+
+.trust-cta-box{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    color:#fff;
+}
+
+.trust-cta .section-tag{
+    background:rgba(255,255,255,.12);
+    color:#fff;
+}
+
+.trust-cta h2{
+    font-size:3rem;
+    margin:25px 0;
+    color:#fff;
+}
+
+.trust-cta p{
+    max-width:700px;
+    margin:0 auto 40px;
+    line-height:1.9;
+    color:rgba(255,255,255,.85);
+}
+
+.trust-cta .hero-buttons{
+    justify-content:center;
+}
+
+/* ==========================================
+   BUSINESS CONTINUITY
+========================================== */
+
+.business-continuity{
+    padding:110px 0;
+    background:#f7f9fc;
+}
+
+.continuity-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:60px;
+}
+
+.continuity-card{
+    background:#fff;
+    border:1px solid #edf2f8;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 12px 35px rgba(15,23,42,.06);
+    transition:.35s ease;
+}
+
+.continuity-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 24px 55px rgba(15,23,42,.12);
+}
+
+.continuity-card i{
+    font-size:2rem;
+    color:#4f46e5;
+    margin-bottom:20px;
+}
+
+.continuity-card h3{
+    margin-bottom:15px;
+    color:#102a43;
+}
+
+.continuity-card p{
+    color:#5b6b7d;
+    line-height:1.8;
+}
+
+/* ==========================================
+   GOVERNANCE
+========================================== */
+
+.governance{
+    padding:110px 0;
+    background:#ffffff;
+}
+
+.governance-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.governance-left h2{
+    margin:18px 0 24px;
+    font-size:2.5rem;
+    line-height:1.2;
+    color:#102a43;
+}
+
+.governance-left p{
+    color:#5b6b7d;
+    line-height:1.9;
+}
+
+.governance-right{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+
+.governance-item{
+
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+
+    background:#f8fbff;
+
+    border:1px solid #edf2f8;
+
+    border-radius:18px;
+
+    padding:28px;
+
+    transition:.35s ease;
+}
+
+.governance-item:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 40px rgba(15,23,42,.10);
+
+}
+
+.governance-item i{
+
+    width:56px;
+    height:56px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:linear-gradient(135deg,#4f46e5,#2563eb);
+
+    color:#fff;
+
+    font-size:20px;
+
+    flex-shrink:0;
+
+}
+
+.governance-item h3{
+
+    margin-bottom:8px;
+
+    color:#102a43;
+
+}
+
+.governance-item p{
+
+    margin:0;
+
+    color:#5b6b7d;
+
+    line-height:1.8;
+
+}
+
+#overview,
+#security,
+#privacy,
+#access,
+#incident,
+#continuity,
+#governance,
+#contact{
+    scroll-margin-top:150px;
+}
+
+/* ==========================================
+   SECURITY BINDER SECTION HEADINGS
+========================================== */
+
+.section-heading{
+    max-width:760px;
+    margin:0 auto 60px;
+}
+
+.section-heading.center{
+    text-align:center;
+}
+
+.section-heading h2{
+    font-size:2.5rem;
+    line-height:1.2;
+    font-weight:700;
+    color:#102a43;
+    margin:14px 0 18px;
+}
+
+.section-heading p{
+    font-size:1.05rem;
+    line-height:1.8;
+    color:#5b6b7d;
+}
+
+/* ==========================================
+   SECURITY BINDER SCROLL ANIMATION
+========================================== */
+
+.reveal{
+    opacity:0;
+    transform:translateY(40px);
+    transition:
+        opacity .8s ease,
+        transform .8s cubic-bezier(.22,1,.36,1);
+}
+
+.reveal.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* Card Stagger */
+
+.reveal-delay-1{transition-delay:.08s;}
+.reveal-delay-2{transition-delay:.16s;}
+.reveal-delay-3{transition-delay:.24s;}
+.reveal-delay-4{transition-delay:.32s;}
