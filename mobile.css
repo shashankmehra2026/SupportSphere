@@ -13,8 +13,16 @@
 @media (max-width: 992px) {
 
     /* Hide desktop navigation */
-    .nav-links {
-    display: none;
+    .header .nav-links{
+    display: none !important;
+}
+
+.header .search-icon{
+    display: none !important;
+}
+
+.header .mobile-menu-btn{
+    display: flex !important;
 }
 
 .search-icon {
@@ -80,13 +88,16 @@
 
 .header{
 
-    position:sticky;
-    top:0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffffff;
+    width: 100%;
+}
 
-    z-index:1000;
+.desktop-header .nav{
 
-    background:#ffffff;
-
+    min-height: 74px;
 }
 
 }
