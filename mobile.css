@@ -1,0 +1,248 @@
+/* SupportSphere Mobile CSS */
+
+/* ==========================================
+   SUPPORTSPHERE MOBILE
+========================================== */
+
+/* Hide mobile elements on desktop */
+
+.mobile-menu-btn{
+    display:none;
+}
+
+@media (max-width: 992px) {
+
+    /* Hide desktop navigation */
+    .nav-links {
+    display: none;
+}
+
+.search-icon {
+    display: none;
+}
+
+    /* Show mobile hamburger */
+    .mobile-menu-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:46px;
+    height:46px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#4f46e5;
+
+    color:#ffffff;
+
+    font-size:1.1rem;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.mobile-menu-btn:hover{
+
+    background:#4338ca;
+
+}
+
+.logo img{
+
+    height:58px;
+
+}
+
+    /* Keep logo and hamburger aligned */
+    .nav{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    height:74px;
+
+    padding:0 18px;
+
+    background:#ffffff;
+
+    border-bottom:1px solid #edf2f7;
+
+}
+
+.header{
+
+    position:sticky;
+    top:0;
+
+    z-index:1000;
+
+    background:#ffffff;
+
+}
+
+}
+
+/* ==========================================
+   MOBILE MENU OVERLAY
+========================================== */
+
+/* Hidden by default */
+
+.mobile-menu-overlay{
+    display:none;
+}
+
+/* Mobile only */
+
+@media (max-width:992px){
+
+    .mobile-menu-overlay{
+
+        position:fixed;
+        inset:0;
+
+        background:rgba(15,23,42,.45);
+
+        display:none;
+
+        justify-content:flex-end;
+
+        z-index:9999;
+
+    }
+
+    .mobile-menu-overlay.active{
+        display:flex;
+    }
+
+    .mobile-menu-panel{
+
+    width:100%;
+    height:100vh;
+
+    background:#ffffff;
+
+    padding:24px;
+
+    display:flex;
+    flex-direction:column;
+
+    overflow-y:auto;
+
+}
+
+    .mobile-menu-close{
+
+        background:none;
+        border:none;
+
+        font-size:1.6rem;
+
+        cursor:pointer;
+
+        margin-bottom:30px;
+
+        color:#0f172a;
+
+    }
+
+    .mobile-menu-links{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:6px;
+
+    margin-top:16px;
+
+    padding-top:24px;
+
+    flex:1;
+
+}
+
+    .mobile-menu-links a{
+
+    display:flex;
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#0f172a;
+
+    font-size:1.08rem;
+
+    font-weight:600;
+
+    padding:16px 8px;
+
+    border-bottom:1px solid #f1f5f9;
+
+    transition:.25s;
+
+}
+
+.mobile-menu-links a:hover{
+
+    background:#eef2ff;
+
+    color:#4f46e5;
+
+}
+
+}
+
+.mobile-menu-top{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding-bottom:20px;
+    margin-bottom:30px;
+
+    border-bottom:1px solid #e5e7eb;
+
+}
+
+.mobile-menu-logo{
+
+    height:95px;
+    width:auto;
+
+}
+
+/* ==========================================
+   HOME PAGE - HERO
+========================================== */
+
+@media (max-width:768px){
+
+    .hero{
+        padding:40px 0 30px;
+    }
+
+    .hero-grid{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:28px;
+        min-height:auto;
+    }
+
+    .hero-left,
+    .hero-right{
+        width:100%;
+        max-width:100%;
+    }
+
+}

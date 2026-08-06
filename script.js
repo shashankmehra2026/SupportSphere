@@ -182,17 +182,3 @@ whyItems.forEach(item => {
     whyObserver.observe(item);
 });
 
-// ===========================
-// MOBILE MENU
-// ===========================
-
-const menuToggle = document.querySelector(".menu-toggle");
-const mobileMenu = document.querySelector(".nav-links");
-
-if (menuToggle && mobileMenu) {
-
-    menuToggle.addEventListener("click", () => {
-        mobileMenu.classList.toggle("active");
-    });
-
-}

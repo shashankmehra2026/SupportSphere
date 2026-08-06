@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="mobile.css">
 </head>
 
 <body>
@@ -57,7 +58,7 @@
 
 </div>
 
-<header class="header">
+<header class="header desktop-header">
 
         <div class="container nav">
 
@@ -175,13 +176,15 @@
 
 </ul>
 
-<button class="menu-toggle" aria-label="Open Menu">
+<button class="mobile-menu-btn" aria-label="Open Menu">
     <i class="fas fa-bars"></i>
 </button>
 
         </div>
 
     </header>
+
+    
 
     <section class="hero home-hero">
 
@@ -601,7 +604,44 @@
 
 </div>
 
+<!-- MOBILE MENU OVERLAY -->
+
+<div class="mobile-menu-overlay">
+
+    <div class="mobile-menu-panel">
+
+    <div class="mobile-menu-top">
+
+        <img src="images/supportsphere-logo.svg"
+             alt="SupportSphere Logo"
+             class="mobile-menu-logo">
+
+        <button class="mobile-menu-close">
+            <i class="fas fa-times"></i>
+        </button>
+
+    </div>
+
+        <nav class="mobile-menu-links">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="insights.html">Insights</a>
+            <a href="how-we-work.html">How We Work</a>
+            <a href="faq.html">FAQ</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </div>
+
+</div>
+
 <script src="script.js"></script>
+
+<script src="mobile.js"></script>
 
 </body>
 </html>
