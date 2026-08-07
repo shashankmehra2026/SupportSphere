@@ -64,9 +64,8 @@
 }
 
 .logo img{
-
-    height:58px;
-
+    height:72px;
+    width:auto;
 }
 
     /* Keep logo and hamburger aligned */
