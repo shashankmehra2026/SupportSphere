@@ -562,3 +562,172 @@ footer{
 }
 
 }
+
+/* ===== ABOUT - WHY SUPPORTSPHERE EXISTS ===== */
+
+.about-story-grid {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-story-text {
+    width: 100%;
+    text-align: left;
+}
+
+.about-story-text h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.about-story-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-story-image img {
+    width: 85%;
+    max-width: 320px;
+    height: auto;
+}
+
+/* ===== ABOUT - BUILT TO SUPPORT GROWTH ===== */
+
+.about-growth-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.about-growth-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    order: 1;
+}
+
+.about-growth-image img{
+    width:78%;
+    max-width:300px;
+    height: auto;
+}
+
+.about-growth-content {
+    width: 100%;
+    order: 2;
+}
+
+.about-growth-content h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.about-growth-content p {
+    text-align: left;
+}
+
+/* ===== ABOUT PAGE : BUILT TO SUPPORT GROWTH ===== */
+
+.our-story-grid{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:2rem;
+}
+
+.our-story-image{
+    order:1;
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.our-story-image img{
+    width:85%;
+    max-width:320px;
+    height:auto;
+    display:block;
+}
+
+.our-story-content{
+    order:2;
+    width:100%;
+}
+
+.our-story-content h2{
+    text-align:center;
+    margin-bottom:1rem;
+}
+
+.our-story-content p{
+    text-align:left;
+}
+
+/* ABOUT HERO HEIGHT */
+
+.about-hero .hero-grid{
+    min-height:260px;
+}
+
+.about-hero{
+    min-height:180px;
+}
+
+/* SERVICES HERO */
+
+.services-banner{
+    min-height:180px;
+}
+
+.services-banner-overlay{
+    min-height:180px;
+}
+
+.services-banner-content{
+    min-height:180px;
+}
+
+.services-banner h1{
+    font-size:2.4rem;
+}
+
+/* ==========================
+   SERVICES MOBILE CARDS
+========================== */
+
+.expertise-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.expertise-card{
+    max-width:320px;
+     min-height:180px;
+    width:100%;
+    margin:0 auto;
+    padding:24px 18px;
+    border-radius:18px;
+    background:#fff;
+    box-shadow:0 12px 30px rgba(16,24,40,.08);
+    text-align:center;
+}
+
+.expertise-card i{
+    font-size:2.5rem;
+    margin-bottom:16px;
+}
+
+.expertise-card h3{
+    font-size:1.55rem;
+    margin-bottom:12px;
+    margin-bottom:0;
+}
+
+.expertise-card .btn{
+    width:100%;
+    justify-content:center;
+}
