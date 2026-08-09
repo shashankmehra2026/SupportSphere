@@ -287,6 +287,9 @@
     display:block !important;
     width:100% !important;
     max-width:100% !important;
+    min-width:0 !important;
+    box-sizing:border-box;
+    padding:0 18px;
     text-align:center;
 }
 
@@ -294,11 +297,17 @@
     font-size:2.2rem !important;
     line-height:1.2;
     margin-bottom:20px;
+    max-width:100%;
+    box-sizing:border-box;
+    overflow-wrap:break-word;
 }
 
 .hero-left p{
     font-size:1rem;
     line-height:1.8;
+    max-width:100%;
+    box-sizing:border-box;
+    overflow-wrap:break-word;
 }
 
 .hero-buttons{
@@ -372,15 +381,19 @@
 
 /* Disable Why Section Animation on Mobile */
 
-.why-item{
-    opacity:1 !important;
-    transform:none !important;
-    transition:none !important;
+@media (max-width:768px){
+    .why-item{
+        opacity:1 !important;
+        transform:none !important;
+        transition:none !important;
+    }
 }
 
 /* ==========================================
    EXPERTISE SECTION - MOBILE
 ========================================== */
+
+@media (max-width:768px){
 
 .expertise-grid{
     display:grid !important;
@@ -418,6 +431,8 @@
     grid-column:1 / -1;
     max-width:220px;
     margin:0 auto;
+}
+
 }
 
 /* ==========================================
@@ -563,6 +578,8 @@ footer{
 
 }
 
+@media (max-width:768px){
+    
 /* ===== ABOUT - WHY SUPPORTSPHERE EXISTS ===== */
 
 .about-story-grid {
@@ -666,7 +683,13 @@ footer{
 .our-story-content p{
     text-align:left;
 }
+.our-story-content p {
+    text-align: left;
+}
 
+}
+
+@media (max-width:768px){
 /* ABOUT HERO HEIGHT */
 
 .about-hero .hero-grid{
@@ -694,40 +717,4 @@ footer{
 .services-banner h1{
     font-size:2.4rem;
 }
-
-/* ==========================
-   SERVICES MOBILE CARDS
-========================== */
-
-.expertise-grid{
-    grid-template-columns:1fr;
-    gap:20px;
-}
-
-.expertise-card{
-    max-width:320px;
-     min-height:180px;
-    width:100%;
-    margin:0 auto;
-    padding:24px 18px;
-    border-radius:18px;
-    background:#fff;
-    box-shadow:0 12px 30px rgba(16,24,40,.08);
-    text-align:center;
-}
-
-.expertise-card i{
-    font-size:2.5rem;
-    margin-bottom:16px;
-}
-
-.expertise-card h3{
-    font-size:1.55rem;
-    margin-bottom:12px;
-    margin-bottom:0;
-}
-
-.expertise-card .btn{
-    width:100%;
-    justify-content:center;
 }
