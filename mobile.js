@@ -1,4 +1,6 @@
-const menuButton = document.querySelector(".mobile-menu-btn");
+const menuButton =
+    document.querySelector(".mobile-menu-btn") ||
+    document.querySelector(".mobile-menu-toggle");
 const menuOverlay = document.querySelector(".mobile-menu-overlay");
 const menuClose = document.querySelector(".mobile-menu-close");
 

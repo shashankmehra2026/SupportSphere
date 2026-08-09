@@ -61,7 +61,11 @@
     </a>
 </div>
 
-            <ul class="nav-links">
+<button class="mobile-menu-btn" aria-label="Open Menu">
+    <i class="fas fa-bars"></i>
+</button>
+
+<ul class="nav-links">
 
     <li><a href="index.html">Home</a></li>
 
@@ -891,7 +895,45 @@ function showMember(memberId, element) {
     </div>
 </div>
 
+<!-- MOBILE MENU OVERLAY -->
+
+<div class="mobile-menu-overlay">
+
+    <div class="mobile-menu-panel">
+
+        <div class="mobile-menu-top">
+
+            <a href="index.html">
+                <img src="images/supportsphere-logo.svg"
+                     alt="SupportSphere"
+                     class="mobile-menu-logo">
+            </a>
+
+            <button class="mobile-menu-close" aria-label="Close Menu">
+                <i class="fas fa-times"></i>
+            </button>
+
+        </div>
+
+        <nav class="mobile-menu-links">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="insights.html">Insights</a>
+            <a href="how-we-work.html">How We Work</a>
+            <a href="faq.html">FAQ</a>
+            <a href="careers.html">Careers</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </div>
+
+</div>
+
 <script src="script.js"></script>
+<script src="mobile.js"></script>
 
 </body>
 </html>

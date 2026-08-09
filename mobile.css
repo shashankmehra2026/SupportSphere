@@ -718,3 +718,1269 @@ footer{
     font-size:2.4rem;
 }
 }
+
+/* ==========================================
+   INSIGHTS - FEATURED INSIGHT MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    .featured-insight{
+        overflow:hidden;
+    }
+
+    .featured-card{
+        display:flex !important;
+        flex-direction:column !important;
+        width:100% !important;
+        max-width:100% !important;
+        box-sizing:border-box;
+        margin:0 !important;
+    }
+
+    .featured-image{
+        width:100% !important;
+        max-width:100% !important;
+        height:auto !important;
+    }
+
+    .featured-image img{
+        width:100% !important;
+        height:auto !important;
+        display:block;
+        object-fit:cover;
+    }
+
+    .featured-content{
+        width:100% !important;
+        max-width:100% !important;
+        box-sizing:border-box;
+        padding:28px 22px !important;
+    }
+
+    .featured-content h3{
+        font-size:1.7rem !important;
+        line-height:1.25 !important;
+        max-width:100%;
+        overflow-wrap:break-word;
+    }
+
+    .featured-content p{
+        font-size:0.95rem !important;
+        line-height:1.7 !important;
+        max-width:100%;
+        overflow-wrap:break-word;
+    }
+
+}
+
+/* ==========================================
+   INSIGHTS - REMOVE MOBILE HORIZONTAL OVERFLOW
+========================================== */
+
+@media (max-width:768px){
+
+    .article-row{
+        margin:0 !important;
+        width:100% !important;
+        box-sizing:border-box;
+    }
+
+}
+
+/* ==========================================
+   HOW WE WORK - MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    /* ------------------------------------------
+       GLOBAL MOBILE OVERFLOW PROTECTION
+    ------------------------------------------ */
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .work-hero,
+    .our-process,
+    .engagement-principles,
+    .delivery-models,
+    .communication-reporting,
+    .what-to-expect,
+    .work-cta{
+        width:100%;
+        overflow:hidden;
+    }
+
+
+    /* ------------------------------------------
+       HOW WE WORK HERO
+    ------------------------------------------ */
+
+    .work-hero{
+        padding:55px 0 60px !important;
+    }
+
+    .work-hero-grid{
+        display:flex !important;
+        flex-direction:column;
+        width:100%;
+        gap:40px;
+        align-items:center;
+    }
+
+    .work-hero-content{
+        width:100%;
+        max-width:100%;
+        padding:0 18px;
+        box-sizing:border-box;
+        text-align:left;
+    }
+
+    .work-hero-content h1{
+        font-size:2.35rem !important;
+        line-height:1.18 !important;
+        margin:20px 0 !important;
+        max-width:100%;
+        overflow-wrap:break-word;
+    }
+
+    .work-hero-content p{
+        width:100%;
+        max-width:100%;
+        font-size:.98rem !important;
+        line-height:1.75 !important;
+        overflow-wrap:break-word;
+    }
+
+    .work-hero-content .hero-buttons{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        gap:12px;
+        margin-top:28px;
+    }
+
+    .work-hero-content .hero-buttons .btn{
+        width:100%;
+        box-sizing:border-box;
+        text-align:center;
+    }
+
+    .work-hero-visual{
+        width:100%;
+        max-width:100%;
+        padding:0 18px;
+        box-sizing:border-box;
+    }
+
+    .workflow-card{
+        width:100% !important;
+        max-width:100% !important;
+        box-sizing:border-box;
+        padding:28px 22px !important;
+        border-radius:22px;
+    }
+
+    .workflow-step{
+        gap:14px;
+        width:100%;
+    }
+
+    .workflow-circle{
+        width:48px;
+        height:48px;
+        font-size:.9rem;
+        flex-shrink:0;
+    }
+
+    .workflow-text{
+        min-width:0;
+    }
+
+    .workflow-text h4{
+        font-size:1rem;
+    }
+
+    .workflow-text p{
+        font-size:.84rem;
+        line-height:1.5;
+        overflow-wrap:break-word;
+    }
+
+    .workflow-line{
+        height:24px;
+        margin:6px 0 6px 23px;
+    }
+
+
+    /* ------------------------------------------
+       OUR PROCESS
+    ------------------------------------------ */
+
+    .our-process{
+        padding:70px 0 80px !important;
+    }
+
+    .our-process .section-heading{
+        width:100%;
+        max-width:100%;
+        padding:0 18px;
+        box-sizing:border-box;
+        margin-bottom:45px !important;
+    }
+
+    .our-process .section-heading h2{
+        font-size:2rem !important;
+        line-height:1.2;
+        margin:18px 0 !important;
+    }
+
+    .our-process .section-heading p{
+        font-size:.95rem;
+        line-height:1.7;
+    }
+
+    .premium-process{
+        display:flex !important;
+        flex-direction:column;
+        width:100%;
+        gap:0 !important;
+        margin-top:40px !important;
+        padding:0 18px;
+        box-sizing:border-box;
+    }
+
+    .process-line{
+        display:none !important;
+    }
+
+    .process-node,
+    .process-node.bottom,
+    .process-node.top{
+        width:100%;
+        margin:0 !important;
+        padding:0 0 28px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .process-node::after,
+    .process-node.top::after,
+    .process-node.bottom::after{
+        display:none !important;
+    }
+
+    .node-circle,
+    .process-node:nth-child(4) .node-circle{
+        width:62px !important;
+        height:62px !important;
+        font-size:17px !important;
+        margin:0 auto 18px;
+        border-width:5px;
+        flex-shrink:0;
+    }
+
+    .node-card{
+        width:100%;
+        min-height:auto !important;
+        box-sizing:border-box;
+        margin:0 !important;
+        padding:28px 22px !important;
+        border-radius:20px;
+        text-align:center;
+    }
+
+    .node-card h3{
+        font-size:1.25rem;
+        margin-bottom:10px;
+    }
+
+    .node-card p{
+        font-size:.95rem;
+        line-height:1.7;
+    }
+
+
+    /* ------------------------------------------
+       ENGAGEMENT PRINCIPLES
+    ------------------------------------------ */
+
+    .engagement-principles{
+        padding:75px 0 !important;
+    }
+
+    .engagement-principles .section-heading{
+        width:100%;
+        max-width:100%;
+        padding:0 18px;
+        box-sizing:border-box;
+        margin-bottom:45px !important;
+    }
+
+    .engagement-principles .section-heading h2{
+        font-size:2rem !important;
+        line-height:1.2;
+        margin:18px 0 !important;
+    }
+
+    .engagement-principles .section-heading p{
+        font-size:.95rem;
+        line-height:1.7;
+    }
+
+    .principles-layout{
+        display:flex !important;
+        flex-direction:column;
+        width:100%;
+        gap:40px !important;
+        margin-top:0 !important;
+        padding:0 18px;
+        box-sizing:border-box;
+    }
+
+    .principles-left{
+        width:100%;
+        padding-top:0 !important;
+    }
+
+    .principles-left h3{
+        font-size:2rem !important;
+        line-height:1.2;
+        margin-bottom:18px;
+    }
+
+    .principles-left p{
+        font-size:.98rem;
+        line-height:1.75;
+    }
+
+    .principles-right{
+        width:100%;
+        gap:22px !important;
+    }
+
+    .principle-item{
+        width:100%;
+        box-sizing:border-box;
+        gap:16px !important;
+        padding-bottom:22px !important;
+    }
+
+    .principle-icon{
+        width:50px;
+        height:50px;
+        border-radius:15px;
+        font-size:1.1rem;
+        flex-shrink:0;
+    }
+
+    .principle-item h4{
+        font-size:1.08rem;
+        margin-bottom:6px;
+    }
+
+    .principle-item p{
+        font-size:.92rem;
+        line-height:1.65;
+    }
+
+
+    /* ------------------------------------------
+       DELIVERY MODELS
+    ------------------------------------------ */
+
+    .delivery-models{
+        padding:75px 0 !important;
+    }
+
+    .delivery-models .section-heading{
+        width:100%;
+        max-width:100%;
+        padding:0 18px;
+        box-sizing:border-box;
+    }
+
+    .delivery-models .section-heading h2{
+        font-size:2rem !important;
+        line-height:1.2;
+    }
+
+    .delivery-models .section-heading p{
+        font-size:.95rem;
+        line-height:1.7;
+    }
+
+    .delivery-columns{
+        display:grid !important;
+        grid-template-columns:1fr !important;
+        width:100%;
+        gap:32px !important;
+        margin-top:45px !important;
+        padding:0 18px;
+        box-sizing:border-box;
+    }
+
+    .delivery-column{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .delivery-column h3{
+        font-size:1.45rem;
+        padding-bottom:14px;
+        margin-bottom:15px;
+    }
+
+    .delivery-column ul li{
+        font-size:.95rem;
+        line-height:1.65;
+        padding-left:26px;
+    }
+
+
+    /* ------------------------------------------
+       COMMUNICATION & REPORTING
+    ------------------------------------------ */
+
+    .communication-reporting{
+        padding:75px 0 !important;
+    }
+
+    .communication-grid{
+        display:flex !important;
+        flex-direction:column;
+        width:100%;
+        gap:40px !important;
+        padding:0 18px;
+        box-sizing:border-box;
+    }
+
+    .communication-content{
+        width:100%;
+    }
+
+    .communication-content h2{
+        font-size:2rem !important;
+        line-height:1.2;
+        margin:18px 0 !important;
+    }
+
+    .communication-content p{
+        font-size:.95rem;
+        line-height:1.75;
+    }
+
+    .communication-list li{
+        font-size:.95rem;
+        line-height:1.6;
+        align-items:flex-start;
+        gap:12px;
+        margin-bottom:18px;
+    }
+
+    .communication-list i{
+        margin-top:4px;
+        flex-shrink:0;
+    }
+
+    .communication-card{
+        width:100%;
+        box-sizing:border-box;
+        padding:24px 20px !important;
+        border-radius:22px;
+    }
+
+    .report-item{
+        gap:15px;
+        padding:18px 0;
+    }
+
+    .report-item span{
+        font-size:.9rem;
+    }
+
+    .report-item strong{
+        font-size:.9rem;
+        text-align:right;
+    }
+
+
+    /* ------------------------------------------
+       WHAT YOU CAN EXPECT
+    ------------------------------------------ */
+
+    .what-to-expect{
+        padding:75px 0 !important;
+    }
+
+    .what-to-expect .section-heading{
+        width:100%;
+        max-width:100%;
+        padding:0 18px;
+        box-sizing:border-box;
+        margin-bottom:40px !important;
+    }
+
+    .what-to-expect .section-heading h2{
+        font-size:2rem !important;
+        line-height:1.2;
+    }
+
+    .what-to-expect .section-heading p{
+        font-size:.95rem;
+        line-height:1.7;
+    }
+
+    .expect-grid{
+        display:grid !important;
+        grid-template-columns:repeat(2, minmax(0,1fr)) !important;
+        gap:16px !important;
+        padding:0 18px;
+        box-sizing:border-box;
+    }
+
+    .expect-item{
+        width:100%;
+        min-width:0;
+        box-sizing:border-box;
+        padding:24px 14px !important;
+        border-radius:18px;
+    }
+
+    .expect-item i{
+        font-size:1.6rem;
+        margin-bottom:14px;
+    }
+
+    .expect-item h3{
+        font-size:1rem;
+        line-height:1.35;
+    }
+
+
+    /* ------------------------------------------
+       FINAL CTA
+    ------------------------------------------ */
+
+    .work-cta{
+        padding:70px 18px !important;
+        box-sizing:border-box;
+    }
+
+    .work-cta-box{
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+        padding:35px 22px !important;
+        border-radius:24px;
+    }
+
+    .work-cta-box h2{
+        font-size:2rem !important;
+        line-height:1.25;
+    }
+
+    .work-cta-box p{
+        font-size:.94rem;
+        line-height:1.7;
+    }
+
+    .work-cta .hero-buttons{
+        flex-direction:column;
+        width:100%;
+        gap:12px;
+    }
+
+    .work-cta .btn{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+}
+
+/* ==========================================
+   CAREERS PAGE - MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    /* ------------------------------------------
+       CAREERS HERO
+    ------------------------------------------ */
+
+    .careers-hero{
+        min-height:0 !important;
+        padding:45px 0 50px !important;
+        background-position:center center !important;
+        background-size:cover !important;
+    }
+
+    .careers-hero .hero-grid{
+        min-height:auto !important;
+        width:100%;
+        display:flex !important;
+        flex-direction:column;
+    }
+
+    .careers-hero .hero-left{
+        width:100% !important;
+        max-width:100% !important;
+        padding:0 18px;
+        box-sizing:border-box;
+        text-align:center;
+    }
+
+    .careers-hero .hero-left h1{
+        font-size:2.2rem !important;
+        line-height:1.2 !important;
+        margin-bottom:20px !important;
+    }
+
+    .careers-hero .hero-left p{
+        font-size:.95rem !important;
+        line-height:1.75 !important;
+        margin-bottom:0;
+    }
+
+    .careers-hero .hero-buttons{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        gap:12px;
+        margin-top:28px;
+    }
+
+    .careers-hero .hero-buttons a{
+        width:100%;
+        box-sizing:border-box;
+        text-align:center;
+    }
+
+
+    /* ------------------------------------------
+       WHY JOIN SUPPORTSPHERE
+    ------------------------------------------ */
+
+    .why-join{
+        width:100%;
+        padding:70px 0 !important;
+        overflow:hidden;
+    }
+
+    .why-join .container{
+        width:100%;
+        max-width:100%;
+        padding:0 18px;
+        box-sizing:border-box;
+    }
+
+    .why-join-grid{
+        display:flex !important;
+        flex-direction:column;
+        width:100%;
+        gap:45px;
+        box-sizing:border-box;
+    }
+
+    .why-join-left{
+        position:static !important;
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+    }
+
+    .why-join-left h2{
+        font-size:2.35rem !important;
+        line-height:1.15 !important;
+        margin:18px 0 20px !important;
+        max-width:100%;
+        overflow-wrap:break-word;
+    }
+
+    .why-join-left p{
+        width:100%;
+        max-width:100%;
+        font-size:.95rem !important;
+        line-height:1.75 !important;
+        margin-bottom:28px;
+    }
+
+    .why-join-left .primary-btn{
+        display:inline-block;
+        box-sizing:border-box;
+    }
+
+    .why-join-right{
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+    }
+
+    .why-join-item{
+        display:grid !important;
+        grid-template-columns:58px minmax(0,1fr) !important;
+        gap:16px !important;
+        width:100%;
+        padding:28px 0 !important;
+        box-sizing:border-box;
+    }
+
+    .why-number{
+        font-size:40px !important;
+        line-height:1 !important;
+        margin:0;
+    }
+
+    .why-content{
+        width:100%;
+        min-width:0;
+        box-sizing:border-box;
+    }
+
+    .why-content h3{
+        font-size:1.2rem !important;
+        line-height:1.3 !important;
+        margin-bottom:10px !important;
+    }
+
+    .why-content p{
+        width:100%;
+        max-width:100%;
+        font-size:.92rem !important;
+        line-height:1.7 !important;
+        overflow-wrap:break-word;
+    }
+
+
+    /* ------------------------------------------
+       CURRENT STATUS
+    ------------------------------------------ */
+
+    .career-status{
+        width:100%;
+        padding:65px 0 !important;
+        overflow:hidden;
+    }
+
+    .career-status .container{
+        width:100%;
+        max-width:100%;
+        padding:0 18px;
+        box-sizing:border-box;
+    }
+
+    .career-box{
+        width:100%;
+        max-width:100%;
+        padding:38px 22px !important;
+        border-radius:22px !important;
+        box-sizing:border-box;
+    }
+
+    .section-badge{
+        font-size:.72rem !important;
+        padding:7px 15px !important;
+        margin-bottom:18px;
+    }
+
+    .career-box h2{
+        font-size:1.7rem !important;
+        line-height:1.25 !important;
+        margin-bottom:18px !important;
+    }
+
+    .career-box p{
+        width:100%;
+        max-width:100%;
+        font-size:.9rem !important;
+        line-height:1.7 !important;
+    }
+
+
+    /* ------------------------------------------
+       WHAT HAPPENS NEXT
+    ------------------------------------------ */
+
+    .hiring-process{
+        width:100%;
+        padding:70px 0 !important;
+        overflow:hidden;
+    }
+
+    .hiring-process .container{
+        width:100%;
+        max-width:100%;
+        padding:0 18px;
+        box-sizing:border-box;
+    }
+
+    .hiring-process .section-title{
+        width:100%;
+        max-width:100%;
+        margin:0 auto 40px !important;
+        box-sizing:border-box;
+    }
+
+    .hiring-process .section-title h2{
+        font-size:2rem !important;
+        line-height:1.2 !important;
+        margin-bottom:14px !important;
+    }
+
+    .hiring-process .section-title p{
+        font-size:.92rem !important;
+        line-height:1.7 !important;
+    }
+
+    .career-timeline{
+        display:flex !important;
+        flex-direction:column;
+        width:100%;
+        gap:0 !important;
+        margin-top:30px !important;
+        box-sizing:border-box;
+    }
+
+    .timeline-line{
+        display:none !important;
+    }
+
+    .timeline-step{
+        width:100%;
+        max-width:100%;
+        text-align:center;
+        box-sizing:border-box;
+        padding:0 0 42px;
+    }
+
+    .timeline-step:last-child{
+        padding-bottom:0;
+    }
+
+    .timeline-circle{
+        width:64px !important;
+        height:64px !important;
+        margin:0 auto 18px !important;
+        font-size:18px !important;
+        flex-shrink:0;
+    }
+
+    .timeline-step h3{
+        font-size:1.2rem !important;
+        line-height:1.35 !important;
+        margin-bottom:10px !important;
+    }
+
+    .timeline-step p{
+        width:100%;
+        max-width:280px !important;
+        margin:0 auto;
+        font-size:.9rem !important;
+        line-height:1.7 !important;
+    }
+
+
+    /* ------------------------------------------
+       TALENT NETWORK CTA
+    ------------------------------------------ */
+
+    .cta-section{
+        width:100%;
+        padding:65px 0 !important;
+        overflow:hidden;
+    }
+
+    .cta-section .container{
+        width:100%;
+        max-width:100%;
+        padding:0 18px;
+        box-sizing:border-box;
+    }
+
+    .cta-section .section-title{
+        width:100%;
+        max-width:100%;
+        margin:0 auto;
+    }
+
+    .cta-section .section-title h2{
+        font-size:2rem !important;
+        line-height:1.2 !important;
+        margin-bottom:16px !important;
+    }
+
+    .cta-section .section-title p{
+        width:100%;
+        max-width:100%;
+        font-size:.92rem !important;
+        line-height:1.7 !important;
+        margin-bottom:24px !important;
+    }
+
+    .cta-section .section-title .primary-btn{
+        display:inline-block;
+        box-sizing:border-box;
+    }
+
+}
+
+/* ==========================================
+   CONTACT PAGE - MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    /* ------------------------------------------
+       CONTACT HERO
+    ------------------------------------------ */
+
+    .contact-hero{
+        width:100%;
+        min-height:auto !important;
+        padding:70px 18px 65px !important;
+        box-sizing:border-box;
+        overflow:hidden;
+    }
+
+    .contact-hero-content{
+        width:100%;
+        max-width:100%;
+        margin:0 auto;
+        box-sizing:border-box;
+        text-align:center;
+    }
+
+    .contact-hero-content h1{
+        width:100%;
+        max-width:100%;
+        font-size:2.2rem !important;
+        line-height:1.2 !important;
+        margin:0 0 20px !important;
+        overflow-wrap:break-word;
+    }
+
+    .contact-hero-content p{
+        width:100%;
+        max-width:100%;
+        font-size:.95rem !important;
+        line-height:1.75 !important;
+        margin:0 auto 24px !important;
+        overflow-wrap:break-word;
+    }
+
+    .contact-hero-content .btn-primary{
+        display:inline-block;
+        max-width:100%;
+        box-sizing:border-box;
+    }
+
+
+    /* ------------------------------------------
+       CONTACT INFORMATION CARDS
+    ------------------------------------------ */
+
+    .contact-info{
+        width:100%;
+        display:grid !important;
+        grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+        gap:16px !important;
+        padding:45px 18px !important;
+        box-sizing:border-box;
+        overflow:hidden;
+    }
+
+    .contact-card{
+        width:100%;
+        min-width:0;
+        box-sizing:border-box;
+        padding:28px 16px !important;
+        border-radius:18px;
+        overflow:hidden;
+    }
+
+    .contact-card:nth-child(3){
+        grid-column:1 / -1;
+        max-width:calc(50% - 8px);
+        width:100%;
+        margin:0 auto;
+    }
+
+    .contact-icon{
+        font-size:1.4rem;
+        margin-bottom:14px;
+    }
+
+    .contact-card h3{
+        font-size:1rem !important;
+        line-height:1.35 !important;
+        margin-bottom:10px !important;
+    }
+
+    .contact-card p{
+        width:100%;
+        max-width:100%;
+        font-size:.82rem !important;
+        line-height:1.6 !important;
+        overflow-wrap:anywhere;
+    }
+
+
+    /* ------------------------------------------
+       SEND US A MESSAGE
+    ------------------------------------------ */
+
+    .contact-form-section{
+        width:100%;
+        padding:70px 18px !important;
+        box-sizing:border-box;
+        overflow:hidden;
+    }
+
+    .contact-form-container{
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+        margin:0 auto;
+    }
+
+    .contact-form-section .section-header{
+        width:100%;
+        max-width:100%;
+        margin:0 auto 35px;
+        text-align:center;
+        box-sizing:border-box;
+    }
+
+    .contact-form-section .section-header h2{
+        width:100%;
+        max-width:100%;
+        font-size:2rem !important;
+        line-height:1.2 !important;
+        margin:0 0 16px !important;
+        overflow-wrap:break-word;
+    }
+
+    .contact-form-section .section-header p{
+        width:100%;
+        max-width:100%;
+        font-size:.92rem !important;
+        line-height:1.7 !important;
+        margin:0 auto;
+    }
+
+
+    /* ------------------------------------------
+       CONTACT FORM
+    ------------------------------------------ */
+
+    .contact-form{
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+        padding:28px 20px !important;
+        margin:0 auto;
+        border-radius:20px;
+        overflow:hidden;
+    }
+
+    .contact-form .form-row{
+        display:flex !important;
+        flex-direction:column !important;
+        width:100%;
+        gap:16px !important;
+        margin:0 0 16px !important;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea{
+        width:100% !important;
+        max-width:100% !important;
+        min-width:0 !important;
+        box-sizing:border-box !important;
+        font-size:.9rem !important;
+    }
+
+    .contact-form input,
+    .contact-form select{
+        min-height:48px;
+    }
+
+    .contact-form textarea{
+        min-height:130px;
+        resize:vertical;
+    }
+
+    .contact-form button{
+        width:100% !important;
+        max-width:100%;
+        box-sizing:border-box;
+        margin-top:6px;
+    }
+
+    #contactSuccessMessage{
+        width:100%;
+        max-width:100%;
+        box-sizing:border-box;
+        font-size:.88rem;
+        line-height:1.65;
+        text-align:center;
+    }
+
+}
+
+/* =========================================
+   MOBILE HAMBURGER — DESKTOP PROTECTION
+   ========================================= */
+
+@media (min-width: 769px) {
+    .mobile-menu-toggle {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: flex !important;
+    }
+}
+
+/* ==========================================
+   FOUNDERS SECTION - MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+    .founders-section{
+        padding:70px 18px 75px !important;
+    }
+
+    .founders-heading{
+        margin-bottom:40px;
+    }
+
+    .founders-eyebrow{
+        margin-bottom:14px;
+        font-size:10px;
+        letter-spacing:2px;
+    }
+
+    .founders-heading h2{
+        font-size:32px !important;
+        line-height:1.12 !important;
+        letter-spacing:-.8px;
+    }
+
+    .founders-heading-line{
+        width:55px;
+        height:2px;
+        margin:20px auto 18px;
+    }
+
+    .founders-heading p{
+        font-size:14px;
+        line-height:1.7;
+    }
+
+
+    .founders-grid{
+        display:grid !important;
+        grid-template-columns:1fr !important;
+        gap:20px !important;
+    }
+
+
+    .founder-card{
+        min-height:auto;
+        padding:32px 24px 35px;
+
+        border-radius:20px;
+    }
+
+
+    .founder-number{
+        font-size:48px;
+        letter-spacing:-2px;
+    }
+
+
+    .founder-accent-line{
+        width:32px;
+        height:2px;
+        margin-top:9px;
+    }
+
+
+    .founder-content{
+        margin-top:17px;
+    }
+
+
+    .founder-card h3{
+        font-size:24px;
+        line-height:1.2;
+        letter-spacing:-.4px;
+    }
+
+
+    .founder-role{
+        font-size:12px;
+        line-height:1.5;
+    }
+
+
+    .founder-divider{
+        width:24px;
+        height:2px;
+        margin:19px 0 18px;
+    }
+
+
+    .founder-bio{
+        font-size:13px;
+        line-height:1.75;
+        margin-bottom:17px;
+    }
+
+
+    .founder-pattern{
+        width:80px;
+        height:65px;
+
+        top:18px;
+        right:18px;
+
+        background-size:9px 9px;
+    }
+
+
+    .founder-card-shashank::before{
+        width:4px;
+        top:80px;
+        height:130px;
+    }
+
+
+    .founder-card-satyam::before{
+        width:4px;
+    }
+
+
+    .founder-corner{
+        width:90px;
+        height:90px;
+
+        border-radius:0 20px 0 100%;
+    }
+
+
+    .founder-corner::after{
+        top:16px;
+        right:16px;
+        font-size:17px;
+    }
+
+}
